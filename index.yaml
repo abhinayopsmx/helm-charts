@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  opsmx-autopilot:
+  - apiVersion: v1
+    appVersion: 2.9.10
+    created: "2020-07-07T18:41:33.960706474+05:30"
+    description: Autopilot is a release verification platform
+    digest: 7250b66d32fcadd5404f9ff2c1dae24235ac5412d1bea7c8e64ccef20423a3b9
+    home: https://www.opsmx.com/
+    icon: https://www.opsmx.com/images/logo.png
+    keywords:
+    - OpsMx
+    - OES
+    - Autopilot
+    name: opsmx-autopilot
+    urls:
+    - https://github.com/abhinayopsmx/helm-charts/opsmx-autopilot-2.0.0.tgz
+    version: 2.0.0
+generated: "2020-07-07T18:41:33.959616526+05:30"
