@@ -1,9 +1,45 @@
 apiVersion: v1
 entries:
+  oes:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2020-07-07T19:48:45.470143811+05:30"
+    dependencies:
+    - condition: installOpenLdap
+      name: openldap
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: ~1.2.1
+    - condition: installSpinnaker
+      name: spinnaker
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: ~1.20.2
+    - condition: enableCentralLogging
+      name: elasticsearch
+      repository: ""
+      version: 7.5.0
+    - condition: enableCentralLogging
+      name: kibana
+      repository: ""
+      version: 7.5.0
+    - condition: enableCentralLogging
+      name: fluent-bit
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: ^1.9.0
+    description: OES is a non-forked version of OSS spinnaker
+    digest: 8a99390fa0db96449fe0c983ba6875cf7e86536f4efcda846f38673af4271141
+    home: https://www.opsmx.com/
+    icon: https://www.opsmx.com/images/logo.png
+    keywords:
+    - OpsMx
+    - OES
+    name: oes
+    urls:
+    - https://abhinayopsmx.github.io/helm-charts/oes-1.0.0.tgz
+    version: 1.0.0
   opsmx-autopilot:
   - apiVersion: v1
     appVersion: 2.9.10
-    created: "2020-07-07T19:17:08.97716303+05:30"
+    created: "2020-07-07T19:48:45.471255246+05:30"
     description: Autopilot is a release verification platform
     digest: 7250b66d32fcadd5404f9ff2c1dae24235ac5412d1bea7c8e64ccef20423a3b9
     home: https://www.opsmx.com/
@@ -16,4 +52,4 @@ entries:
     urls:
     - https://abhinayopsmx.github.io/helm-charts/opsmx-autopilot-2.0.0.tgz
     version: 2.0.0
-generated: "2020-07-07T19:17:08.976304215+05:30"
+generated: "2020-07-07T19:48:45.452332323+05:30"
