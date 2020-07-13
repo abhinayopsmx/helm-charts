@@ -34,8 +34,8 @@ entries:
     - OES
     name: oes
     urls:
-    - https://abhinayopsmx.github.io/helm-charts/oes-1.0.0.tgz
-    version: 1.0.0
+    - https://abhinayopsmx.github.io/helm-charts/oes-2.0.0.tgz
+    version: 2.0.0
   opsmx-autopilot:
   - apiVersion: v1
     appVersion: 2.9.10
