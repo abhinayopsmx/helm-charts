@@ -2,8 +2,53 @@ apiVersion: v1
 entries:
   oes:
   - apiVersion: v1
+    appVersion: 3.0.0
+    created: "2020-09-12T23:08:50.932466811+05:30"
+    dependencies:
+    - condition: installOpenLdap
+      name: openldap
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.2.1
+    - condition: installSpinnaker
+      name: spinnaker
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: ~2.2.1
+    - condition: enableCentralLogging
+      name: elasticsearch
+      repository: ""
+      version: 7.5.0
+    - condition: enableCentralLogging
+      name: kibana
+      repository: ""
+      version: 7.5.0
+    - condition: enableCentralLogging
+      name: fluent-bit
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: ^1.9.0
+    description: OES is a non-forked version of OSS spinnaker
+    digest: f98df253ecc1d0264912f3a0e81eebec1d6131f5100ea77794ba8bdf8abf3449
+    home: https://www.opsmx.com/
+    icon: https://www.opsmx.com/images/logo.png
+    keywords:
+    - OpsMx
+    - OES
+    - Autopilot
+    maintainers:
+    - email: abhinay.byrisetty@opsmx.io
+      name: abhinaybyrisetty
+    - email: vamsi.krishna@opsmx.io
+      name: vkvamsi
+    - email: nirmalya@opsmx.io
+      name: nirmalyasen
+    - email: srinivas@opsmx.io
+      name: ksrinimba
+    name: oes
+    urls:
+    - https://abhinayopsmx.github.io/helm-charts/oes-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v1
     appVersion: 1.0.0
-    created: "2020-07-07T19:48:45.470143811+05:30"
+    created: "2020-09-12T23:08:50.91287357+05:30"
     dependencies:
     - condition: installOpenLdap
       name: openldap
@@ -26,12 +71,21 @@ entries:
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: ^1.9.0
     description: OES is a non-forked version of OSS spinnaker
-    digest: 8a99390fa0db96449fe0c983ba6875cf7e86536f4efcda846f38673af4271141
+    digest: 795008174d33343760581a03f4309f1ca6a2e92827d1233ec595c210dd336f0a
     home: https://www.opsmx.com/
     icon: https://www.opsmx.com/images/logo.png
     keywords:
     - OpsMx
     - OES
+    maintainers:
+    - email: abhinay.byrisetty@opsmx.io
+      name: abhinaybyrisetty
+    - email: vamsi.krishna@opsmx.io
+      name: vkvamsi
+    - email: nirmalya@opsmx.io
+      name: nirmalyasen
+    - email: srinivas@opsmx.io
+      name: ksrinimba
     name: oes
     urls:
     - https://abhinayopsmx.github.io/helm-charts/oes-2.0.0.tgz
@@ -39,9 +93,9 @@ entries:
   opsmx-autopilot:
   - apiVersion: v1
     appVersion: 2.9.10
-    created: "2020-07-07T19:48:45.471255246+05:30"
+    created: "2020-09-12T23:08:50.93343198+05:30"
     description: Autopilot is a release verification platform
-    digest: 7250b66d32fcadd5404f9ff2c1dae24235ac5412d1bea7c8e64ccef20423a3b9
+    digest: e83c3739d7d53cf86e9ee877544422efc1c6f7c2d06e798d7fd11636285f60e1
     home: https://www.opsmx.com/
     icon: https://www.opsmx.com/images/logo.png
     keywords:
@@ -52,4 +106,4 @@ entries:
     urls:
     - https://abhinayopsmx.github.io/helm-charts/opsmx-autopilot-2.0.0.tgz
     version: 2.0.0
-generated: "2020-07-07T19:48:45.452332323+05:30"
+generated: "2020-09-12T23:08:50.893882695+05:30"
